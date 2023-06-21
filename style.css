@@ -130,7 +130,7 @@ img {
     right:0;
     top:calc(100% + 0.5rem);
     padding:1.5rem;
-    background-color:var(--purple);
+    background-color:var(--orange);
     box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.1);
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -141,6 +141,7 @@ img {
     pointer-events:none;
     gap:2rem;
     border-radius:0.5rem;
+    color:white;
    
 }
 
@@ -150,6 +151,8 @@ img {
 
 .dropdown-heading > a {
     font-weight:700 !important;
+    color:white;
+
 }
 .dropdown-links {
     display:flex;
