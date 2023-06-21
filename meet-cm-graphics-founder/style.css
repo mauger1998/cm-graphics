@@ -380,6 +380,11 @@ main h1 {
         margin-top:4rem;
     }
 }
+@media (max-width:381px) {
+    .main-bottom img {
+        width:8rem;
+    }
+}
 /* Quote */
 
 .quote-section {
