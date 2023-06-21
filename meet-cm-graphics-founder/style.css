@@ -297,9 +297,11 @@ main h1 {
     max-width:25ch;
     margin-top:10rem;
     font-size:var(--text);
+    font-weight:300;
 }
 .main-bottom img {
     width:14rem;
+    z-index:1;
 }
 @media (max-width:861px) {
     .main-bottom {
@@ -418,6 +420,11 @@ main h1 {
     margin-block:-6rem;
     width:calc(100% + 4rem);
     object-fit:cover;
+    z-index:0;
+    position:relative;
+}
+.passion-section h2 {
+    font-size:var(--big-title);
 }
 @media (max-width:1150px) {
    .passion-section .wrapper {
@@ -427,6 +434,7 @@ main h1 {
    .passion-right img {
     height:auto;
     margin-block:0;
+    margin-bottom:-0.4rem;
     margin-inline:-4rem;
     width:calc(100% + 8rem);
     object-fit:cover;
@@ -438,14 +446,11 @@ main h1 {
 }
 
 @media (max-width:600px) {
-    .welcome-section .wrapper h2  {
+    .passion-section h2 {
         font-size:var(--mobile-big-title);
     }
-    .welcome-section .wrapper p {
+    .passion-left p {
         font-size:var(--mobile-text);
-    }
-    .welcome-section .wrapper {
-        align-items: flex-start;
     }
    
 }
