@@ -385,12 +385,80 @@ main h1 {
         width:8rem;
     }
 }
-/* Quote */
+/* Passion */
 
-.quote-section {
+.passion-section {
     background-color:var(--orange);
     color:white;
+    margin-top:-10rem;
 }
+.passion-section .wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:4rem;
+}
+.passion-left {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+}
+.passion-left p {
+    line-height:1.5;
+    font-weight:300;
+    font-size:var(--text);
+}
+.passion-left button {
+    background-color:white;
+    color:var(--orange);
+}
+.passion-right img {
+    height:calc(100% + 12rem);
+    margin-block:-6rem;
+    width:calc(100% + 4rem);
+    object-fit:cover;
+}
+@media (max-width:1150px) {
+   .passion-section .wrapper {
+        grid-template-columns: 1fr;
+        padding-bottom:0;
+   }
+   .passion-right img {
+    height:auto;
+    margin-block:0;
+    margin-inline:-4rem;
+    width:calc(100% + 8rem);
+    object-fit:cover;
+}
+
+}
+@media (max-width:861px) {
+  
+}
+
+@media (max-width:600px) {
+    .welcome-section .wrapper h2  {
+        font-size:var(--mobile-big-title);
+    }
+    .welcome-section .wrapper p {
+        font-size:var(--mobile-text);
+    }
+    .welcome-section .wrapper {
+        align-items: flex-start;
+    }
+   
+}
+@media (max-width:519px) {
+   
+}
+
+@media (max-width:384px) {
+   
+}
+/* Quote */
+
+
 .quote-section .wrapper {
     display:flex;
     align-items: flex-end;
