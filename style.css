@@ -309,9 +309,9 @@ h1 span:nth-child(2) {
 h1 span.relative p:nth-of-type(1) {
     font-size:var(--text);
     position:absolute;
-    left:-45%;
+    left:-60%;
     top:35%;
-    max-width:22ch;
+    max-width:25ch;
     line-height:1.5;
     font-family:"Roboto";
     font-weight:300;

@@ -289,15 +289,12 @@ main h1 {
     text-align:center;
     line-height:0.9;
     font-size:max(100px, 12vw);
-
 }
 
 .main-grid img {
     width:100%;
 }
-.column {
-    /* border:2px solid blue; */
-}
+
 
 main .column p {
     max-width:20ch;
