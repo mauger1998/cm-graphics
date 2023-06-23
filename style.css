@@ -11,8 +11,8 @@
     --mobile-card-title:40px;
     --banner:88px;
     --mobile-banner:60px;
-    --big-title:100px;
-    --mobile-big-title:75px;
+    --big-title:90px;
+    --mobile-big-title:60px;
     --sub-title:75px;
     --mobile-sub-title:60px;
 }
@@ -462,11 +462,11 @@ marquee {
 
 .welcome-section .wrapper h2 {
     font-size:var(--big-title);
-    max-width:10ch;
+    max-width:12ch;
 }
 .welcome-section .wrapper p {
     font-weight:300;
-    max-width:70ch;
+    max-width:72ch;
     width:100%;
     line-height:1.5;
 }
