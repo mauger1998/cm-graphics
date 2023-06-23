@@ -329,7 +329,17 @@ main .column:nth-child(2) {
     flex-direction: column;
     align-items: center;
 }
+.column.relative {
+    position:relative;
+}
 
+.main-grid .relative .arrow {
+    position:absolute;
+    width:150px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
 @media (max-width:1150px) {
     .main-grid {
         width:95%;
@@ -594,6 +604,7 @@ marquee {
 }
 .why-section p {
     max-width:50ch;
+    font-weight:300;
 }
 .why-section .wrapper {
     padding-block:12rem;
@@ -637,9 +648,14 @@ marquee {
     margin-top:0.5rem;
 }
 .gallery-card p:nth-of-type(2) {
-    font-weight:300;
+    font-weight:200;
     font-size:var(--text);
     line-height:1.2;
+}
+.gallery-card img {
+    width:100%;
+    max-height:250px;
+    object-fit:cover;
 }
 @media (max-width:600px) {
     .gallery-card p:nth-of-type(1) {

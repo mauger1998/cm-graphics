@@ -303,6 +303,16 @@ main h1 {
     width:14rem;
     z-index:1;
 }
+.main-bottom .column:nth-child(1) {
+    position:relative;
+}
+.main-bottom .column .arrow {
+    position:absolute;
+    width:100px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%)
+}
 @media (max-width:861px) {
     .main-bottom {
         display:grid;
