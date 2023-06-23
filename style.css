@@ -18,7 +18,7 @@
 }
 @font-face {
     font-family:futura;
-    src:url(FuturaT_Bold.ttf);
+    src:url(Interstate-bold.ttf);
 }
 
 *,
@@ -441,6 +441,7 @@ p.absolute {
     background-color:var(--orange);
     color:white;
     transform:rotateZ(-1deg);
+    padding-block:1rem;
 
 }
 marquee {
@@ -462,11 +463,11 @@ marquee {
 
 .welcome-section .wrapper h2 {
     font-size:var(--big-title);
-    max-width:12ch;
+    max-width:10ch;
 }
 .welcome-section .wrapper p {
     font-weight:300;
-    max-width:72ch;
+    max-width:66ch;
     width:100%;
     line-height:1.5;
 }
@@ -597,7 +598,7 @@ marquee {
     width:37%;
 }
 .column h2 {
-    max-width:10ch;
+    max-width:8ch;
     font-size:var(--sub-title);
 }
 .column p {
@@ -998,6 +999,9 @@ form {
     background-color:white;
     color:var(--orange);
     margin-top:1rem;
+}
+.contact-left h2 {
+    max-width:8ch;
 }
 @media (max-width:1150px) {
     .contact-section .wrapper {

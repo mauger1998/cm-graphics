@@ -18,7 +18,7 @@
 }
 @font-face {
     font-family:futura;
-    src:url(../FuturaT_Bold.ttf);
+    src:url(../Interstate-bold.ttf);
 }
 
 *,
@@ -485,7 +485,7 @@ main .column:nth-child(2) {
 }
 .welcome-section .wrapper p {
     font-weight:300;
-    max-width:83ch;
+    max-width:80ch;
     width:100%;
     line-height:1.5;
 }
@@ -540,6 +540,7 @@ main .column:nth-child(2) {
     font-size:var(--mobile-sub-title) !important;
     font-family:futura;
     line-height:1;
+    max-width:15ch;
 }
 @media (max-width:1150px) {
     .featured-item {
@@ -585,6 +586,8 @@ main .column:nth-child(2) {
     background-color:var(--orange);
     color:white;
     transform:rotateZ(-1deg);
+    padding-block:1rem;
+
 
 }
 marquee {
