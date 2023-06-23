@@ -14,12 +14,17 @@
     --big-title:90px;
     --mobile-big-title:60px;
     --sub-title:75px;
-    --mobile-sub-title:60px;
+    --mobile-sub-title:40px;
 }
 @font-face {
-    font-family:futura;
-    src:url(Interstate-bold.ttf);
-}
+    font-family: "Interstate-Bold Bold";
+    src: url("307074798a79d1495a2ff6a0f00f9c20.eot"); /* IE9*/
+    src: url("307074798a79d1495a2ff6a0f00f9c20.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("307074798a79d1495a2ff6a0f00f9c20.woff2") format("woff2"), /* chrome、firefox */
+    url("307074798a79d1495a2ff6a0f00f9c20.woff") format("woff"), /* chrome、firefox */
+    url("307074798a79d1495a2ff6a0f00f9c20.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("307074798a79d1495a2ff6a0f00f9c20.svg#Interstate-Bold Bold") format("svg"); /* iOS 4.1- */
+  }
 
 *,
 *::before,
@@ -65,16 +70,41 @@ a {
 h1 {
     font-size:var(--heading-one);
     line-height:1;
-    font-family:futura;
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
 }
 span {
-    font-family:futura;
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+p.absolute {
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+#abs {
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
 }
 h2 {
     font-size:var(--sub-title);
     line-height:1;
-    font-family:futura;
-}
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
 @media(max-width:700px) {
     .wrapper {
         padding-inline:2rem;
@@ -101,8 +131,11 @@ h2 {
 }
 .card p {
     max-width:10ch;
-    font-family:futura;
-}
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
 .text {
     display:flex;
     flex-direction: column;
@@ -327,7 +360,7 @@ h1 span.relative p:nth-of-type(1) {
     z-index:1;
 }
 h1 p {
-    font-family:futura;
+    font-family:"Roboto" !important;
 }
 p.absolute {
     color:white;
@@ -434,6 +467,15 @@ p.absolute {
 .main-card-section .three-card-grid .card:nth-child(2) {
     background-image: linear-gradient(to top, #030303ad, #03030300 50%), url(home-carlos-png/Rectangle13.png);
 }
+@media (max-width:400px) {
+    .three-card-grid {
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    }
+    .three-card-grid .card {
+        padding:1rem;
+        font-size:35px !important;
+    }
+}
 
 /* Banner */
 
@@ -446,8 +488,11 @@ p.absolute {
 }
 marquee {
     font-size:var(--banner);
-    font-family:futura;
-}
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
 
 /* Welcome */
 
@@ -467,7 +512,7 @@ marquee {
 }
 .welcome-section .wrapper p {
     font-weight:300;
-    max-width:66ch;
+    max-width:70ch;
     width:100%;
     line-height:1.5;
 }
@@ -520,8 +565,11 @@ marquee {
 .selector-list-item p {
     font-weight:700;
     font-size:var(--card-title);
-    font-family:futura;
-}
+    font-family:"Interstate-Bold Bold" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
 .selector-list-item {
     border-top:1px solid black;
     width:100%;
@@ -1020,6 +1068,9 @@ form {
     .contact-left h2 {
         font-size:var(--mobile-big-title);
     }
+    .contact-left h2 {
+        max-width:15ch;
+    }
 }
 
 /* Arrows */
@@ -1048,4 +1099,8 @@ form {
         right:5% !important;
         width:75px;
     }
+}
+
+body {
+    overflow-x:hidden;
 }
