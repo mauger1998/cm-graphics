@@ -390,7 +390,7 @@ p.absolute {
         font-size:125px;
     }
     .main-right {
-        width:95% !important;
+        width:100% !important;
     }
     main .wrapper {
         gap:2rem;
@@ -998,6 +998,24 @@ form {
     background-color:white;
     color:var(--orange);
     margin-top:1rem;
+}
+@media (max-width:1150px) {
+    .contact-section .wrapper {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap:2rem;
+    }
+    .contact-left,
+    .contact-right {
+        width:100%;
+    }
+}
+
+
+@media (max-width:600px) {
+    .contact-left h2 {
+        font-size:var(--mobile-big-title);
+    }
 }
 
 /* Arrows */
