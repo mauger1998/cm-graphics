@@ -324,11 +324,13 @@ h1 {
     align-items: flex-start;
     gap:0;
     /* border:2px solid red; */
+    letter-spacing:-0.5rem;
 }
 h1 span:nth-child(2) {
     align-self:flex-end;
     margin-right:-25%;
     z-index:2;
+    
 }
 
 .main-right img {
@@ -353,6 +355,8 @@ h1 span.relative p:nth-of-type(1) {
     line-height:1.5;
     font-family:"Roboto";
     font-weight:300;
+    letter-spacing:-0rem;
+
 }
 .relative {
     position:relative;
