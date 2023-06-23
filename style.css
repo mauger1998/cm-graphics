@@ -560,12 +560,16 @@ marquee {
 }
 .selector-right {
     width:60%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .selector-list {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     gap:1rem;
+    width:100%;
 }
 .selector-list-item p {
     font-weight:700;
