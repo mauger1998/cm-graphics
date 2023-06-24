@@ -378,6 +378,23 @@ p.absolute {
 .appear {
     display:none;
 }
+.main-card-section .three-card-grid .card:nth-child(3) {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card-test p {
+    font-weight:500 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size:var(--mobile-tag);
+    max-width:100%;
+    line-height:1.3;
+}
+.card-test p:nth-of-type(2) {
+    font-size: var(--text);
+    margin-top:0.5rem;
+    color:lightgray;
+}
 
 @media (max-width:1150px) {
     main .wrapper {
