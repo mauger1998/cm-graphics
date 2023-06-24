@@ -1,5 +1,5 @@
 :root {
-    --orange:#F16A42;
+    --orange:#F04A00;
     --black:#030303;
     --heading-one:150px;
     --mobile-heading-one:100px;
@@ -321,7 +321,46 @@ main .wrapper .heading-wrapper {
     justify-content: center;
 }
 
+@media (max-width:1252px) {
+   
+}
+@media (max-width:1150px) {
 
+}
+@media (max-width:861px) {
+    h1 {
+        font-size:125px;
+    }
+  
+}
+@media (max-width:650px) {
+    h1 {
+        font-size:120px;
+    }
+}
+@media (max-width:600px) {
+    h1 {
+        font-size:var(--mobile-heading-one);
+    }
+    main p {
+        font-size:var(--mobile-text);
+    }
+}
+@media (max-width:456px) {
+    h1 {
+        font-size:80px;
+    }
+}
+@media (max-width:387px) {
+    h1 {
+        font-size:60px;
+    }
+}
+@media (max-width:306px) {
+    h1 {
+        font-size:55px;
+    }
+}
 
 
 
@@ -541,6 +580,15 @@ marquee {
     .why-section h2 {
         max-width:10ch;
         font-size:var(--mobile-big-title);
+    }
+   
+}
+@media (max-width:500px) {
+    .four-card-grid {
+        display:grid;
+        grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
+        gap:2rem;
+        width:100%;
     }
 }
 
