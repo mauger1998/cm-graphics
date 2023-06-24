@@ -776,6 +776,11 @@ marquee {
     background-position: center;
     background-repeat:no-repeat;
 }
+.why-section .three-card-grid .card:nth-child(3) {
+    justify-content: space-between;
+
+}
+
 
 /* Signage */
 
