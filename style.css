@@ -414,6 +414,24 @@ p.absolute {
     position:absolute;
     right:50%;
 }
+/* Auto Slider Image */
+.main-right {
+    position:relative;
+}
+.main-right .auto-slider-image {
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
+    transition:500ms;
+}
+.auto-slider-image.active {
+    opacity:1;
+    pointer-events:all;
+    transition:500ms;
+}
+.not-absolute {
+    position:static !important;
+}
 @media (max-width:1252px) {
     h1 span.relative p:nth-of-type(1) {
         font-size:var(--text);

@@ -30,3 +30,23 @@ selectorItemsArray.forEach((item, index) => {
 
     })
 })
+
+
+// Auto Slider 
+
+const autoSliderImages = document.querySelectorAll(".auto-slider-image")
+
+setInterval(() => {
+    const activeImage = document.querySelector(".auto-slider-image.active")
+
+    if (activeImage.nextElementSibling != null) {
+        activeImage.classList.remove("active")
+        activeImage.nextElementSibling.classList.add("active")
+    } else {
+        activeImage.classList.remove("active")
+        autoSliderImages[0].classList.add("active")
+    }
+   
+
+   
+}, 3000);
