@@ -1115,6 +1115,7 @@ footer .column:nth-child(4) {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        gap:2rem;
     }
     .socials {
         flex-direction: column;
@@ -1139,12 +1140,16 @@ footer .column:nth-child(4) {
     .contact-box p:nth-of-type(1) {
         max-width:max-content;
     }
+    .column-top {
+        margin-top:1rem;
+    }
     .footer-bottom {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         gap:2rem;
     }
+    
     .privacy {
         flex-direction: column;
         align-items: center;
