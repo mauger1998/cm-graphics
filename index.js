@@ -35,6 +35,9 @@ selectorItemsArray.forEach((item, index) => {
 // Auto Slider 
 
 const autoSliderImages = document.querySelectorAll(".auto-slider-image")
+const designSliderImages = document.querySelectorAll(".slider-image")
+const paginationButtons = document.querySelectorAll(".pagination button")
+
 
 setInterval(() => {
     const activeImage = document.querySelector(".auto-slider-image.active")
@@ -46,6 +49,26 @@ setInterval(() => {
         activeImage.classList.remove("active")
         autoSliderImages[0].classList.add("active")
     }
+
+    const activeSlide = document.querySelector(".slider-image.active")
+    const activeButton = document.querySelector(".pagination button.active")
+
+    if (activeSlide.nextElementSibling != null) {
+        activeSlide.classList.remove("active")
+        activeSlide.nextElementSibling.classList.add("active")
+        activeButton.classList.remove("active")
+        activeButton.nextElementSibling.classList.add("active")
+    } else {
+        activeSlide.classList.remove("active")
+        designSliderImages[0].classList.add("active")
+        activeButton.classList.remove("active")
+        paginationButtons[0].classList.add("active")
+    }
+
+
+    
+
+    
    
 
    
