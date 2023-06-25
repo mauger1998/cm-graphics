@@ -471,7 +471,7 @@ p.absolute {
 @media (max-width:1150px) {
     main .wrapper {
         flex-direction: column;
-        padding-block:10rem;
+        padding-top:10rem;
     }
     p.absolute {
         display:none;
@@ -1340,4 +1340,21 @@ body {
 }
 html {
     overflow-x:hidden;
+}
+
+/* Masks */
+
+.text1,
+.text2 {
+    overflow-y:hidden;
+    padding-right:0.5rem;
+    padding-bottom:0.5rem;
+    font-family: "Interstate-Bold Bold" !important;
+    letter-spacing:-0.6rem;
+
+}
+
+.char {
+    font-family: "Interstate-Bold Bold" !important;
+
 }

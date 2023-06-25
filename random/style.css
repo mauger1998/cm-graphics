@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    width:100%;
+}
+main {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh !important;
+}
+main img {
+    width:60vw !important;
+}
+main .wrapper {
+    width:60%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-block:auto;
+    overflow-x:scroll !important;
+    scroll-snap-type: x mandatory;
+}
+main .wrapper img {
+    scroll-snap-align: start;
+}

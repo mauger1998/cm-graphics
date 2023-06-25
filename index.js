@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener("click", (e) => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
   
@@ -64,12 +66,29 @@ setInterval(() => {
         activeButton.classList.remove("active")
         paginationButtons[0].classList.add("active")
     }
-
-
-    
-
-    
-   
-
    
 }, 5000);
+
+
+
+// Mask Animations
+
+const textLines = document.querySelectorAll(".text1, .text2")
+const textLinesTwo = document.querySelectorAll(".tags")
+
+textLines.forEach(textLine => {
+    const split = new SplitType(textLine, {
+        type: "chars"
+    })
+})
+// textLinesTwo.forEach(textLined => {
+//     const splitTwo = new SplitType(textLined, {
+//         type: "chars"
+//     })
+// })
+
+
+gsap.from(".char", {
+    yPercent: -120,
+    stagger: 0.05,
+})
