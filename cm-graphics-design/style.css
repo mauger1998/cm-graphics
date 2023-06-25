@@ -802,3 +802,39 @@ footer .column:nth-child(4) {
 body {
     overflow-x:hidden;
 }
+
+.text1,
+.text2 {
+    overflow-y:hidden;
+    padding-right:0.5rem;
+    padding-bottom:0.5rem;
+    font-family: "Interstate-Bold Bold" !important;
+    letter-spacing:-0.6rem;
+
+}
+
+.char {
+    font-family: "Interstate-Bold Bold" !important;
+}
+
+.welcome-section .wrapper {
+    transform:translateX(-20rem);
+    opacity:0;
+}
+.featured-section .wrapper {
+    transform:translateX(20rem);
+    opacity:0;
+}
+.gallery-column {
+    transform:translateX(-20rem);
+    opacity:0;
+}
+.four-card-grid {
+    transform:translateX(20rem);
+    opacity:0;
+}
+.quote-section .wrapped {
+    transform:translateX(-20rem);
+    opacity:0;
+}
+

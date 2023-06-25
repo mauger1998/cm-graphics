@@ -73,14 +73,9 @@ setInterval(() => {
 
 // Mask Animations
 
-const textLines = document.querySelectorAll(".text1, .text2")
 const textLinesTwo = document.querySelectorAll(".tags")
 
-textLines.forEach(textLine => {
-    const split = new SplitType(textLine, {
-        type: "chars"
-    })
-})
+
 // textLinesTwo.forEach(textLined => {
 //     const splitTwo = new SplitType(textLined, {
 //         type: "chars"
@@ -94,14 +89,14 @@ gsap.from(".char", {
 })
 
 gsap.to(".welcome-section .wrapper", {
-    scrollTrigger: {
-      trigger: ".welcome-section .wrapper",
-      start: "top center", // when the top of the trigger hits the top of the viewport
-      stagger:true,
-    },
-    x:0,
-    opacity:1,
-  });
+  scrollTrigger: {
+    trigger: ".welcome-section .wrapper",
+    start: "top center", // when the top of the trigger hits the top of the viewport
+    stagger:true,
+  },
+  x:0,
+  opacity:1,
+});
 gsap.to(".selector-section .wrapper", {
     scrollTrigger: {
       trigger: ".selector-section .wrapper",
@@ -156,3 +151,26 @@ gsap.to(".contact-section .wrapper", {
     x:0,
     opacity:1,
   });
+
+
+
+
+
+  const textLines = document.querySelectorAll(".text1, .text2")
+
+
+  textLines.forEach(textLine => {
+    const split = new SplitType(textLine, {
+        type: "chars"
+    })
+})
+
+
+gsap.from(".char", {
+  yPercent: -120,
+  stagger: 0.05,
+})
+
+
+
+

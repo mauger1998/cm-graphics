@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener("click", (e) => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
   
@@ -76,9 +78,83 @@ fetch(URLTWO)
                 featuredTitle.textContent = result.title
                 featuredItem.appendChild(featuredTitle)
 
+                
+
 
             });
 
           }
         })
         .catch((err) => console.error(err));
+
+// Animations 
+
+const textLines = document.querySelectorAll(".text1")
+
+textLines.forEach(textLine => {
+    const split = new SplitType(textLine, {
+        type: "chars"
+    })
+})
+
+
+
+gsap.from(".char", {
+    yPercent: -120,
+    stagger: 0.05,
+})
+
+
+gsap.to(".welcome-section .wrapped ", {
+  scrollTrigger: {
+    trigger: ".welcome-section .wrapped",
+    start: "top bottom", // when the top of the trigger hits the top of the viewport
+    stagger:1,
+  },
+  x:0,
+  opacity:1,
+});
+gsap.to(".featured-section .wrapped ", {
+  scrollTrigger: {
+    trigger: ".featured-section .wrapped",
+    start: "top bottom", // when the top of the trigger hits the top of the viewport
+    stagger:1,
+  },
+  x:0,
+  opacity:1,
+});
+gsap.to(".gallery-column ", {
+  scrollTrigger: {
+    trigger: ".gallery-column",
+    start: "top bottom", // when the top of the trigger hits the top of the viewport
+    stagger:1,
+  },
+  x:0,
+  opacity:1,
+});
+gsap.to(".four-card-grid ", {
+  scrollTrigger: {
+    trigger: ".four-card-grid",
+    start: "top bottom", // when the top of the trigger hits the top of the viewport
+    stagger:1,
+  },
+  x:0,
+  opacity:1,
+});
+gsap.to(".quote-section .wrapped ", {
+  scrollTrigger: {
+    trigger: ".quote-section .wrapped",
+    start: "top bottom", // when the top of the trigger hits the top of the viewport
+    stagger:1,
+  },
+  x:0,
+  opacity:1,
+});
+
+
+
+
+
+
+
+
