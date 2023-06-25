@@ -1336,5 +1336,9 @@ form {
 }
 
 body {
+    overflow-x:hidden !important;
+}
+html,
+main {
     overflow-x:hidden;
 }
