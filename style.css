@@ -135,7 +135,7 @@ h2 {
     line-height:1
 }
 .card p {
-    max-width:10ch;
+    max-width:8ch;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
@@ -155,6 +155,18 @@ img {
     width:100%;
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
     gap:2rem;
+}
+.card img {
+    width:50px;
+}
+.card .bottom-push {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width:100%;
+}
+.double {
+    width:100px !important;
 }
 /****** Dropdown ******/
 
@@ -417,6 +429,7 @@ p.absolute {
 /* Auto Slider Image */
 .main-right {
     position:relative;
+    width:40%;
 }
 .main-right .auto-slider-image {
     position:absolute;
@@ -431,6 +444,16 @@ p.absolute {
 }
 .not-absolute {
     position:static !important;
+}
+.carlos {
+    width: 60% !important;
+    position:absolute !important;
+    bottom:-23%;
+    right:25%;
+}
+.main-right img:nth-child(2) {
+    position:static !important;
+    /* opacity:1; */
 }
 @media (max-width:1252px) {
     h1 span.relative p:nth-of-type(1) {
@@ -603,16 +626,18 @@ p.absolute {
     background-color:var(--orange);
     color:white;
     transform:rotateZ(-1deg);
-    padding-block:1rem;
+    padding-block:4rem;
+    width:102%;
 
 }
-marquee {
-    font-size:var(--banner);
+.banner h2 {
+    font-size:6vw;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;}
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* Welcome */
 

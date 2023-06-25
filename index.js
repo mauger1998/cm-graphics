@@ -40,15 +40,15 @@ const paginationButtons = document.querySelectorAll(".pagination button")
 
 
 setInterval(() => {
-    const activeImage = document.querySelector(".auto-slider-image.active")
+    // const activeImage = document.querySelector(".auto-slider-image.active")
 
-    if (activeImage.nextElementSibling != null) {
-        activeImage.classList.remove("active")
-        activeImage.nextElementSibling.classList.add("active")
-    } else {
-        activeImage.classList.remove("active")
-        autoSliderImages[0].classList.add("active")
-    }
+    // if (activeImage.nextElementSibling != null) {
+    //     activeImage.classList.remove("active")
+    //     activeImage.nextElementSibling.classList.add("active")
+    // } else {
+    //     activeImage.classList.remove("active")
+    //     autoSliderImages[0].classList.add("active")
+    // }
 
     const activeSlide = document.querySelector(".slider-image.active")
     const activeButton = document.querySelector(".pagination button.active")
