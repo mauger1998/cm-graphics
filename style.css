@@ -1338,7 +1338,6 @@ form {
 body {
     overflow-x:hidden !important;
 }
-html,
-main {
+html {
     overflow-x:hidden;
 }
