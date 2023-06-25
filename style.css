@@ -593,6 +593,9 @@ p.absolute {
     .appear {
         /* font-size:var(--mobile-text); */
     }
+    main .wrapper {
+        padding-top:6rem;
+    }
 }
 @media (max-width:521px) {
     .carlos {
