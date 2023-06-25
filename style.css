@@ -884,6 +884,7 @@ p.absolute {
     height:1.5rem  !important;
     padding:0;
     cursor:pointer;
+    transition:1000ms;
 }
 .pagination {
     display:flex;
@@ -897,6 +898,7 @@ p.absolute {
 }
 .pagination button.active {
     background-color:var(--black);
+    transition:1000ms;
 }
 @media (max-width:1150px) {
     .slider-wrapper {
@@ -1356,5 +1358,33 @@ html {
 
 .char {
     font-family: "Interstate-Bold Bold" !important;
+}
 
+.welcome-section .wrapper {
+    transform:translateX(15rem);
+    opacity:0;
+}
+.selector-section .wrapper {
+    transform:translateX(-15rem);
+    opacity:0;
+}
+.slider-section .wrapper {
+    transform:translateX(15rem);
+    opacity:0;
+}
+.why-section .relative {
+    transform:translateX(-15rem);
+    opacity:0;
+}
+.why-section .three-card-grid {
+    transform:translateX(15rem);
+    opacity:0;
+}
+.signage-section .wrapper {
+    transform:translateX(-15rem);
+    opacity:0;
+}
+.contact-section .wrapper {
+    transform:translateX(15rem);
+    opacity:0;
 }

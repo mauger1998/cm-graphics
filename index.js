@@ -92,3 +92,67 @@ gsap.from(".char", {
     yPercent: -120,
     stagger: 0.05,
 })
+
+gsap.to(".welcome-section .wrapper", {
+    scrollTrigger: {
+      trigger: ".welcome-section .wrapper",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
+gsap.to(".selector-section .wrapper", {
+    scrollTrigger: {
+      trigger: ".selector-section .wrapper",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
+gsap.to(".slider-section .wrapper", {
+    scrollTrigger: {
+      trigger: ".slider-section .wrapper",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
+gsap.to(".why-section .relative", {
+    scrollTrigger: {
+      trigger: ".why-section .relative",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
+gsap.to(".why-section .three-card-grid", {
+    scrollTrigger: {
+      trigger: ".why-section .three-card-grid",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
+gsap.to(".signage-section .wrapper", {
+    scrollTrigger: {
+      trigger: ".signage-section .wrapper",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
+gsap.to(".contact-section .wrapper", {
+    scrollTrigger: {
+      trigger: ".contact-section .wrapper",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      stagger:true,
+    },
+    x:0,
+    opacity:1,
+  });
