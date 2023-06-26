@@ -84,7 +84,7 @@ span {
     -moz-osx-font-smoothing: grayscale;;
 }
 h2 {
-    font-size:var(--sub-title);
+    font-size:var(--sub-title) !important;
     line-height:1;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
@@ -384,7 +384,7 @@ main .wrapper .heading-wrapper {
 
 
 .welcome-section .wrapper h2 {
-    font-size:var(--big-title);
+    font-size:var(--sub-title) !important;
     max-width:12ch;
 }
 .welcome-section .wrapper p {
@@ -402,7 +402,7 @@ main .wrapper .heading-wrapper {
 
 @media (max-width:600px) {
     .welcome-section .wrapper h2  {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title) !important;
     }
     .welcome-section .wrapper p {
         font-size:var(--mobile-text);
@@ -441,7 +441,7 @@ main .wrapper .heading-wrapper {
 }
 .featured-item p {
     font-weight:700;
-    font-size:var(--sub-title) !important;
+    font-size:var(--sub-title) !important !important;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
@@ -504,7 +504,7 @@ main .wrapper .heading-wrapper {
 
 }
 .banner h2 {
-    font-size:6vw;
+    font-size:6dvw !important;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
@@ -589,7 +589,7 @@ main .wrapper .heading-wrapper {
     }
     .why-section h2 {
         max-width:10ch;
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title) !important;
     }
    
 }
@@ -631,7 +631,7 @@ main .wrapper .heading-wrapper {
     color: var(--orange);
 }
 .quote-left h2 {
-    font-size:var(--big-title);
+    font-size:var(--sub-title) !important;
 }
 .quote-right p {
     font-size:var(--text);
@@ -654,7 +654,7 @@ main .wrapper .heading-wrapper {
 
 @media (max-width:600px) {
     .quote-left h2 {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title) !important;
     }
     .quote-right p {
         font-size:var(--mobile-text);
@@ -805,7 +805,7 @@ footer .column:nth-child(4) {
 
 @media (max-width:600px) {
     .quote-left h2 {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title);
     }
     .quote-right p {
         font-size:var(--mobile-text);

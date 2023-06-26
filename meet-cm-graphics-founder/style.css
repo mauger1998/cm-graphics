@@ -84,7 +84,7 @@ span {
     -moz-osx-font-smoothing: grayscale;;
 }
 h2 {
-    font-size:var(--sub-title);
+    font-size:var(--sub-title) !important;
     line-height:1;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
@@ -463,7 +463,7 @@ main h1 {
     position:relative;
 }
 .passion-section h2 {
-    font-size:var(--big-title);
+    font-size:var(--sub-title) !important;
 }
 @media (max-width:1150px) {
    .passion-section .wrapper {
@@ -495,7 +495,7 @@ main h1 {
 }
 @media (max-width:600px) {
     .passion-section h2 {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title) !important;
     }
     .passion-left p {
         font-size:var(--mobile-text);
@@ -543,7 +543,7 @@ main h1 {
     color: var(--orange);
 }
 .quote-left h2 {
-    font-size:var(--big-title);
+    font-size:var(--sub-title) !important;
 }
 .quote-right p {
     font-size:var(--text);
@@ -569,7 +569,7 @@ main h1 {
 
 @media (max-width:600px) {
     .quote-left h2 {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title) !important;
     }
     .quote-right p {
         font-size:var(--mobile-text);
@@ -720,7 +720,7 @@ footer .column:nth-child(4) {
 
 @media (max-width:600px) {
     .quote-left h2 {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title);
     }
     .quote-right p {
         font-size:var(--mobile-text);
@@ -862,6 +862,16 @@ p.absolute {
     width:50px !important;
 }
 
+@media (max-width:600px) {
+    .testimonials-section h2 {
+        font-size:var(--mobile-sub-title) !important;
+    }
+}
+@media (max-width:541px) {
+    .testimonials-section h2 {
+        letter-spacing:-0.2rem;
+    }
+}
 
 @media (max-width:400px) {
     .three-card-grid {
@@ -870,6 +880,21 @@ p.absolute {
     .three-card-grid .card {
         padding:1rem;
         font-size:35px !important;
+    }
+    .testimonials-section h2 {
+        font-size:50px;
+    }
+}
+@media (max-width:328px) {
+    .three-card-grid {
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    }
+    .three-card-grid .card {
+        padding:1rem;
+        font-size:35px !important;
+    }
+    .testimonials-section h2 {
+        font-size:var(--mobile-sub-title);
     }
 }
 /* Signage */
