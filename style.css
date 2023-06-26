@@ -24,7 +24,11 @@
     url("307074798a79d1495a2ff6a0f00f9c20.woff") format("woff"), /* chrome、firefox */
     url("307074798a79d1495a2ff6a0f00f9c20.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url("307074798a79d1495a2ff6a0f00f9c20.svg#Interstate-Bold Bold") format("svg"); /* iOS 4.1- */
-  }
+}
+
+.main-right img {
+    border:2px solid blue; 
+}
 
 *,
 *::before,
