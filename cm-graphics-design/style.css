@@ -633,6 +633,7 @@ main .wrapper .heading-wrapper {
 .quote-left h2 {
     font-size:var(--sub-title) !important;
 }
+
 .quote-right p {
     font-size:var(--text);
     font-weight:300;
