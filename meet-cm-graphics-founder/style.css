@@ -673,10 +673,7 @@ footer .column:nth-child(4) {
         align-items: center;
         justify-content: flex-start;
     }
-    .socials {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    
     .column-top {
         margin-top:1rem;
     }
