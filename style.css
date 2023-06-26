@@ -500,6 +500,21 @@ p.absolute {
         width:30% !important;
         bottom:-3rem !important;
     }
+    #row {
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap:3rem;
+        font-weight:500;
+        margin:0 !important; 
+        padding:0;   
+        width:auto !important;
+        max-width:auto !important;
+        margin-bottom:-0.75rem !important;
+    }
+    .relative .tags {
+        right:16%;
+    }
 }
 @media (max-width:861px) {
     
@@ -534,23 +549,32 @@ p.absolute {
     }
     .tags {
         font-size:var(--mobile-tag);
-        font-weight:300 !important;
+        font-weight:400 !important;
     }
-    #row {
+    /* #row {
         display:flex;
         align-items: center;
         justify-content: flex-start;
         gap:4rem;
         margin:0 !important;
-        /* border:2px solid red;  */
+         border:2px solid red;  
         padding:0;   
         width:auto !important;
         max-width:auto !important;
         margin-bottom:-0.75rem !important;
-    }
-    .relative .tags {
+    } 
+     .relative .tags {
         position:absolute;
         right:50%;
+    } */
+}
+@media (max-width:789px) {
+    #row {
+        gap:2rem;
+    }
+    .main-right img {
+        width:12rem !important;
+        right:22%;
     }
 }
 @media (max-width:650px) {
@@ -562,6 +586,9 @@ p.absolute {
         font-family:"Roboto";
         font-weight:300;
         margin-top:1rem;
+    }
+    .main-right img {
+        width:55% !important;
     }
     h1 span:nth-child(2) {
         align-self:auto;
@@ -577,9 +604,9 @@ p.absolute {
     .relative .tags {
         right:73%;
     }
-    .carlos {
+    .main-right img {
         width:55% !important;
-        right:-5%;
+        right:-5% !important;
         bottom:-4rem !important;
     }
 }
@@ -602,16 +629,21 @@ p.absolute {
     }
 }
 @media (max-width:521px) {
-    .carlos {
+    .main-right img {
         width:60% !important;
-        right:-15%;
+        right:-8% !important;
 
     }
+}
+@media(max-width:469px) {
+    /* .main-right img {
+        width:16rem !important;
+    } */
 }
 
 @media (max-width:422px) {
     h1 {
-        font-size:80px;
+        font-size:80px !important;
     }
     h1 span p {
         letter-spacing: -0.4rem !important;
@@ -626,16 +658,45 @@ p.absolute {
     }
 }
 @media (max-width:410px) {
-    .carlos {
+    .main-right img {
         width:70% !important;
-        right:-20%;
+        right:-20% !important;
+    }
+    .tags {
+        font-size:14px;
     }
 }
 @media (max-width:368px) {
-    .carlos {
+    .main-right img {
         width:75% !important;
-        right:-25%;
+        right:-25% !important;
     }
+    main h1 {
+        font-size:70px !important;
+    }
+    #row {
+        gap:0;
+        justify-content: space-between;
+    }
+    .appear {
+        max-width:15ch;
+    }
+
+}
+@media (max-width:334px) {
+    main .relative {
+        margin-top:0.5rem !important;
+    }
+    .main-right img {
+        width:85% !important;
+        right:-32% !important;
+    }
+}
+@media (max-width:334px) {
+    main h1 {
+        font-size:65px !important;
+    }
+    
 }
 
 /* Card Title */
