@@ -340,7 +340,7 @@ h1 {
     gap:0;
     /* border:2px solid red; */
     letter-spacing:-0.5rem;
-    width:102% !important;
+    width:105% !important;
 }
 main .relative {
     align-self:flex-end;
