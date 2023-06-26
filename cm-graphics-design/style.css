@@ -782,10 +782,14 @@ footer .column:nth-child(4) {
         max-width:max-content;
     }
     .footer-bottom {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap:2rem;
+        width:100%;
+    }
+    .footer-bottom a {
+        align-self:center;
     }
     .privacy {
         flex-direction: column;
@@ -794,6 +798,7 @@ footer .column:nth-child(4) {
     }
     .footer-bottom p {
         text-align:center;
+        align-self:center;
     }
 }
 
@@ -850,3 +855,18 @@ html {
 
 
 
+
+.footer-bottom {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width:100%;
+    border-top:1px solid black;
+    padding-top:4rem;
+}
+footer .island {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.5rem;
+}
