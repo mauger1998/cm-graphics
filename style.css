@@ -716,7 +716,7 @@ p.absolute {
     background-repeat: no-repeat;
 }
 .main-card-section .three-card-grid .card:nth-child(1) {
-    background-image: linear-gradient(to top, #030303ad, #03030300 50%), url(home-carlos-png/Rectangle12.png);
+    background-image: linear-gradient(to top, #030303ad, #03030300 50%), url(founder-png/van-image.png);
 }
 .main-card-section .three-card-grid .card:nth-child(2) {
     background-image: linear-gradient(to top, #030303ad, #03030300 50%), url(home-carlos-png/Rectangle13.png);
