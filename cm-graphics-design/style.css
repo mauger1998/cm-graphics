@@ -441,7 +441,7 @@ main .wrapper .heading-wrapper {
 }
 .featured-item p {
     font-weight:700;
-    font-size:var(--sub-title) !important !important;
+    font-size:var(--sub-title) !important;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
