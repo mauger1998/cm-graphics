@@ -480,6 +480,7 @@ p.absolute {
     main .wrapper {
         flex-direction: column;
         padding-top:6rem;
+        padding-bottom:2rem;
     }
     p.absolute {
         display:none;
