@@ -82,11 +82,24 @@ const textLinesTwo = document.querySelectorAll(".tags")
 //     })
 // })
 
+const textLines = document.querySelectorAll(".text1, .text2")
+
+
+textLines.forEach(textLine => {
+  const split = new SplitType(textLine, {
+      type: "chars"
+  })
+})
+
 
 gsap.from(".char", {
-    yPercent: -120,
-    stagger: 0.05,
+yPercent: -120,
+stagger: 0.05,
 })
+
+
+
+
 
 gsap.to(".welcome-section .wrapper", {
   scrollTrigger: {
@@ -156,20 +169,6 @@ gsap.to(".contact-section .wrapper", {
 
 
 
-  const textLines = document.querySelectorAll(".text1, .text2")
-
-
-  textLines.forEach(textLine => {
-    const split = new SplitType(textLine, {
-        type: "chars"
-    })
-})
-
-
-gsap.from(".char", {
-  yPercent: -120,
-  stagger: 0.05,
-})
 
 
 

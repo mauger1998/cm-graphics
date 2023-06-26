@@ -168,6 +168,7 @@ img {
 .double {
     width:100px !important;
 }
+
 /****** Dropdown ******/
 
 .dropdown {
@@ -278,7 +279,7 @@ img {
     justify-content: space-between;
 }
 .logo-wrapper img {
-    width:100px;
+    width:125px;
 }
 .logo-wrapper {
     width:25%;
@@ -297,7 +298,7 @@ nav ul {
     gap:4rem;
 }
 nav ul li {
-    font-weight:500;
+    font-weight:400;
 }
 .header-button-wrapper {
     width:25%;
@@ -342,7 +343,6 @@ main .relative {
     align-self:flex-end;
     margin-right:-25%;
     z-index:2;
-    
 }
 
 .main-right img {
@@ -371,6 +371,10 @@ h1 span.relative p:nth-of-type(1) {
 }
 .relative {
     position:relative;
+}
+
+main .relative {
+    margin-top:-1rem;
 }
 
 
@@ -465,13 +469,13 @@ p.absolute {
         line-height:1.5;
         font-family:"Roboto";
         font-weight:300;
-        letter-spacing:-0rem;
+        letter-spacing:0rem;
     }
 }
 @media (max-width:1150px) {
     main .wrapper {
         flex-direction: column;
-        padding-top:10rem;
+        padding-top:6rem;
     }
     p.absolute {
         display:none;
@@ -565,7 +569,7 @@ p.absolute {
         z-index:2;
     }
     main .relative {
-        margin-top:1rem;
+        margin-top:-0.25rem;
     }
     #row .tags {
         margin:0 !important;
@@ -608,6 +612,13 @@ p.absolute {
 @media (max-width:422px) {
     h1 {
         font-size:80px;
+    }
+    h1 span p {
+        letter-spacing: -0.4rem !important;
+       
+    }
+    main .relative {
+        margin-top:0 !important;
     }
     .relative .tags {
         right:73%;
@@ -665,7 +676,7 @@ p.absolute {
 
 }
 .banner h2 {
-    font-size:6vw;
+    font-size:6dvw;
     font-family:"Interstate-Bold Bold" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
@@ -695,8 +706,10 @@ p.absolute {
     width:100%;
     line-height:1.5;
 }
-@media (max-width:1150px) {
-   
+@media (max-width:1094px) {
+   .welcome-section .arrow {
+    top:90%;
+   }
 }
 @media (max-width:861px) {
   
@@ -704,7 +717,7 @@ p.absolute {
 
 @media (max-width:600px) {
     .welcome-section .wrapper h2  {
-        font-size:var(--mobile-big-title);
+        font-size:var(--mobile-sub-title) !important;
     }
     .welcome-section .wrapper p {
         font-size:var(--mobile-text);
@@ -976,7 +989,11 @@ p.absolute {
     justify-content: space-between;
 
 }
-
+@media (max-width:776px) {
+    .why-section .arrow {
+        top:-50%;
+    }
+}
 
 /* Signage */
 
@@ -1389,4 +1406,9 @@ html {
 .contact-section .wrapper {
     transform:translateX(15rem);
     opacity:0;
+}
+
+.banner h2 {
+    text-align:center !important;
+    line-height:1.25;
 }
