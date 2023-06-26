@@ -632,6 +632,7 @@ main .wrapper .heading-wrapper {
 }
 .quote-left h2 {
     font-size:var(--sub-title) !important;
+    max-width:10ch;
 }
 
 .quote-right p {
