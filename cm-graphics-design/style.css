@@ -389,7 +389,7 @@ main .wrapper .heading-wrapper {
 }
 .welcome-section .wrapper p {
     font-weight:300;
-    max-width:85ch;
+    max-width:70ch;
     width:100%;
     line-height:1.5;
 }
@@ -426,6 +426,7 @@ main .wrapper .heading-wrapper {
     grid-template-columns: 1fr;
     gap:0rem;
 }
+.featured
 .featured-item {
     display:grid;
     grid-template-columns: 1fr 2fr;
