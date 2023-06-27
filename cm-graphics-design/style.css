@@ -426,7 +426,12 @@ main .wrapper .heading-wrapper {
     grid-template-columns: 1fr;
     gap:0rem;
 }
-.featured
+.featured {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:8rem;
+    align-items: center;
+}
 .featured-item {
     display:grid;
     grid-template-columns: 1fr 2fr;
@@ -449,7 +454,7 @@ main .wrapper .heading-wrapper {
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;;
     line-height:1;
-    max-width:15ch;
+    max-width:15ch !important;
 }
 @media (max-width:1150px) {
     .featured-item {
