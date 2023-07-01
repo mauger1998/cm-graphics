@@ -662,13 +662,19 @@ p.absolute {
         bottom:90%;
     }
 }
+@media (max-width:440px) {
+   
+    .tags {
+        font-size:12px;
+    }
+}
 @media (max-width:410px) {
     .main-right img {
         width:70% !important;
         right:-20% !important;
     }
     .tags {
-        font-size:14px;
+        font-size:12px;
     }
 }
 @media (max-width:368px) {
@@ -680,8 +686,8 @@ p.absolute {
         font-size:70px !important;
     }
     #row {
-        gap:0;
-        justify-content: space-between;
+        /* gap:0; */
+        /* justify-content: space-between; */
     }
     .appear {
         max-width:15ch;
